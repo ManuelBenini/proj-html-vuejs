@@ -37,5 +37,8 @@ export default {
   a{
     text-decoration: none;
   }
+  .mb-container{
+    max-width: 1210px;
+  }
 
 </style>

@@ -1,7 +1,7 @@
 <template>
 
   <header>
-    <div class="container h-100 d-flex justify-content-between align-items-center">
+    <div class="container mb-container h-100 d-flex justify-content-between align-items-center">
       <div class="logo flex-grow-1">
         <img src="../assets/img/dark-logo.png" alt="logo Max Coach">
       </div>
