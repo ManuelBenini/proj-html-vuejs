@@ -226,7 +226,7 @@
         .hero-big-image{
           border: 20px solid white;
           border-radius: 15px;
-          box-shadow: 1px 5px 8px rgba($color: #000000, $alpha: 0.1);
+          box-shadow: 1px 1px 15px rgba($color: #000000, $alpha: 0.1);
         }
         .youtube-icon{
           position: absolute;
@@ -281,7 +281,7 @@
       margin-right: 25px;
       .mb-service-card{
         margin-bottom: 25px;
-        border: 1px solid black;
+        box-shadow: 1px 1px 15px rgba($color: #000000, $alpha: 0.1);
         .card-description{
           padding: 5px 14px;
           padding-top: 25px;
