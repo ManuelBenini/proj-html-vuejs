@@ -4,8 +4,8 @@
     <div class="hero pt-5 text-center">
       <div class="container mb-container">
         <h2>Learn At Your Own Pace!</h2>
-        <p>Get Teamed up with people of the same will.</p>
-        <button>Get started for free</button>
+        <p>Get teamed up with people of the same will.</p>
+        <GetStartedBtn />
       </div>
       <div class="jumbo-images position-relative pt-5">
         <img class="hero-left-person" src="../assets/img/home-6-hero-left-person.png" alt="statistics">
@@ -45,14 +45,75 @@
         </div>
       </div>
     </div>
+
+    <div class="services">
+      <div class="container mb-container d-flex">
+
+        <div class="mb-columns d-flex">
+
+          <div class="mb-column mb-column-1">
+            <div class="mb-service-card">
+              <div class="card-description">
+               <h5>Graphic Design</h5>
+               <p>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.</p>
+              </div>
+              <div class="card-image card-image-1"></div>
+           </div>
+  
+            <div class="mb-service-card">
+              <div class="card-image card-image-3"></div>
+              <div class="card-description">
+               <h5>Idea Discussion</h5>
+               <p>Get teamed up with the specialists who work and teach coding for years at famous universities</p>
+              </div>
+            </div>
+         </div>
+  
+         <div class="mb-column mb-column-2">
+            <div class="mb-service-card">
+              <div class="card-description">
+               <h5>Business Administration</h5>
+               <p>Leaners are encouraged to study the mechanism and structure of suystem administation.</p>
+              </div>
+              <div class="card-image card-image-2"></div>
+           </div>
+  
+            <div class="mb-service-card">
+              <div class="card-image card-image-4 m-2"></div>
+              <div class="card-description">
+               <h5>Web Development</h5>
+               <p>Learn to start building a webpage from scatch. you decide your own pace, course and speed.</p>
+              </div>
+            </div>
+         </div>
+
+        </div>
+
+        <div class="premise">
+          <p>TOGETHER WE CAN CREATE</p>
+          <h1>Services We <span>Can Provide</span> For My Clients.</h1>
+          <p><i class="fa-solid fa-check"></i> Select & customize courses to your preferences</p>
+          <p><i class="fa-solid fa-check"></i> Change the tutor and make arrangements</p>
+          <p><i class="fa-solid fa-check"></i> Partecipate in events to join others</p>
+          <p><i class="fa-solid fa-check"></i> Get the desired certificate delivered at house</p>
+
+          <GetStartedBtn />
+        </div>
+
+      </div>
+    </div>
+
   </main>
   
 </template>
 
 <script>
-export default {
-  name: 'MainComp'
-}
+  import GetStartedBtn from './GetStartedBtn.vue';
+
+  export default {
+    name: "MainComp",
+    components: { GetStartedBtn }
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -63,15 +124,6 @@ export default {
     color: white;
     max-height: 570px;
     margin-bottom: 100px;
-    button{
-      border: none;
-      background-color: $primary-color;
-      color: white;
-      padding: 13px 30px;
-      border-radius: 7px;
-      font-weight: 900;
-      font-size: 14px;
-    }
     .jumbo-images{
       overflow: hidden;
       height: 515px;
@@ -104,6 +156,7 @@ export default {
   }
 
   .achievement{
+    margin-bottom: 100px;
     .mb-container{
       padding-top: 150px;
       h3{
@@ -121,6 +174,7 @@ export default {
       }
     }
     .statistics{
+      padding: 0 30px;
       padding-top: 100px;
       h3{
         color: $primary-color;
@@ -128,6 +182,66 @@ export default {
       }
       span{
         font-size: 13px;
+      }
+    }
+  }
+
+  .services{
+    .mb-column{
+      width: 250px;
+      margin-right: 25px;
+      .mb-service-card{
+        margin-bottom: 25px;
+        border: 1px solid black;
+        .card-description{
+          padding: 5px 14px;
+          padding-top: 25px;
+          p{
+            font-size: 15px;
+          }
+          h5{
+            color: #1f2154;
+          }
+        }
+        .card-image{
+          height: 160px;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .card-image-1{
+          background-image: url('../assets/img/home-6-service-image-01.png');
+          background-position: left;
+        }
+        .card-image-2{
+          background-image: url('../assets/img/home-6-service-image-02.png');
+          background-position: center;
+        }
+        .card-image-3{
+          background-image: url('../assets/img/home-6-service-image-03.png');
+          background-position: left;
+        }
+        .card-image-4{
+          background-image: url('../assets/img/home-6-service-image-04.png');
+          background-position: center;
+        }
+      }
+    }
+    .mb-column-2{
+      margin-top: 50px;
+    }
+    .premise{
+      width: 400px;
+      padding-top: 150px;
+      margin-left: 100px;
+      h1{
+        margin-bottom: 40px;
+      }
+      span{
+        color: $primary-color;
+      }
+      .fa-check{
+        margin-right: 10px;
+        color: $primary-color;
       }
     }
   }
