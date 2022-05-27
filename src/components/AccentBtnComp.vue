@@ -1,12 +1,16 @@
 <template>
 
-  <button class="get-started">Get started for free</button>
+  <button v-if="btnText != 'View all courses'">{{btnText}}</button>
+  <button v-else>{{btnText}} <i class="fa-solid fa-arrow-right"></i></button>
 
 </template>
 
 <script>
 export default {
-  name: 'GetStartedBtn'
+  name: 'AccentBtnComp',
+  props:{
+    btnText: String
+  }
 }
 </script>
 

@@ -28,12 +28,14 @@ export default {
 <style lang="scss">
   @import '~bootstrap/scss/bootstrap.scss';
   @import '~@fortawesome/fontawesome-free/css/all.min.css';
-  @import '~@fontsource/roboto/index.css';
-  @import '~@fontsource/roboto/900.css';
-  @import '~@fontsource/roboto/500.css';
+  @import '~@fontsource/poppins/index.css';
+  @import '~@fontsource/poppins/600.css';
+  @import '~@fontsource/poppins/700.css';
+  @import '~@fontsource/poppins/800.css';
+  @import '~@fontsource/poppins/900.css';
 
   body{
-    font-family: "Roboto";
+    font-family: "Poppins";
   }
   ul{
     list-style: none;

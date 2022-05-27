@@ -5,7 +5,7 @@
       <div class="container mb-container">
         <h2>Learn At Your Own Pace!</h2>
         <p>Get teamed up with people of the same will.</p>
-        <GetStartedBtn />
+        <AccentBtnComp btnText="Get started for free" />
       </div>
       <div class="jumbo-images position-relative pt-5">
         <img class="hero-left-person" src="../assets/img/home-6-hero-left-person.png" alt="statistics">
@@ -91,15 +91,102 @@
 
         <div class="premise">
           <p>TOGETHER WE CAN CREATE</p>
-          <h1>Services We <span>Can Provide</span> For My Clients.</h1>
+          <h1>Services We <ColoredTextComp text="Can Provide" /> For My Clients.</h1>
           <p><i class="fa-solid fa-check"></i> Select & customize courses to your preferences</p>
           <p><i class="fa-solid fa-check"></i> Change the tutor and make arrangements</p>
           <p><i class="fa-solid fa-check"></i> Partecipate in events to join others</p>
           <p><i class="fa-solid fa-check"></i> Get the desired certificate delivered at house</p>
 
-          <GetStartedBtn />
+          <AccentBtnComp btnText="Get started for free" />
+        </div>
+      </div>
+    </div>
+
+    <div class="courses">
+      <div class="container mb-container">
+        <div class="section-title text-center">
+          <p>CHOOSE A COURSE TO GET STARTED</p>
+          <h1>Latest Featured <ColoredTextComp text="Courses"/> </h1>
         </div>
 
+        <div class="mb-course-cards-container d-flex flex-wrap">
+          <div class="mb-course-card d-flex">
+            <div class="bg-image bg-image-1"></div>
+            <div class="course-description">
+              <h4><ColoredTextComp text="$40"/><ColoredTextComp class="course-decimal-price" text=".00"/></h4>
+              <h6>Learning to Write as a Professional Author</h6>
+              <div class="course-statistics d-flex">
+                <p><i class="fa-regular fa-file-lines"></i>20 Lessons</p>
+                <p><i class="fa-regular fa-user"></i>50 Students</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-course-card d-flex">
+            <div class="bg-image bg-image-2"></div>
+            <div class="course-description">
+              <h4><ColoredTextComp text="Free"/></h4>
+              <h6>Customer-centric Info-Tech Strategies</h6>
+              <div class="course-statistics d-flex">
+                <p><i class="fa-regular fa-file-lines"></i>24 Lessons</p>
+                <p><i class="fa-regular fa-user"></i>769 Students</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-course-card d-flex">
+            <div class="bg-image bg-image-3"></div>
+            <div class="course-description">
+              <h4><ColoredTextComp text="$19"/><ColoredTextComp class="course-decimal-price" text=".00"/></h4>
+              <h6>Open Programming courses for Everyone: Python</h6>
+              <div class="course-statistics d-flex">
+                <p><i class="fa-regular fa-file-lines"></i>17 Lessons</p>
+                <p><i class="fa-regular fa-user"></i>62 Students</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-course-card d-flex">
+            <div class="bg-image bg-image-4"></div>
+            <div class="course-description">
+              <h4><ColoredTextComp text="$26"/><ColoredTextComp class="course-decimal-price" text=".00"/></h4>
+              <h6>Academic Listening and Note-taking</h6>
+              <div class="course-statistics d-flex">
+                <p><i class="fa-regular fa-file-lines"></i>14 Lessons</p>
+                <p><i class="fa-regular fa-user"></i>67 Students</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-course-card d-flex">
+            <div class="bg-image bg-image-5"></div>
+            <div class="course-description">
+              <h4><ColoredTextComp text="$39"/><ColoredTextComp class="course-decimal-price" text=".00"/></h4>
+              <h6>Master jQuery in a Short Period of Time</h6>
+              <div class="course-statistics d-flex">
+                <p><i class="fa-regular fa-file-lines"></i>6 Lessons</p>
+                <p><i class="fa-regular fa-user"></i>51 Students</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-course-card d-flex">
+            <div class="bg-image bg-image-6"></div>
+            <div class="course-description">
+              <h4><ColoredTextComp text="$59"/><ColoredTextComp class="course-decimal-price" text=".00"/></h4>
+              <h6>Introduction to Javascript for Beginners</h6>
+              <div class="course-statistics d-flex">
+                <p><i class="fa-regular fa-file-lines"></i>14 Lessons</p>
+                <p><i class="fa-regular fa-user"></i>76 Students</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="courses-btn text-center">
+          <AccentBtnComp style="padding: 16px 65px;" btnText='View all courses' />
+        </div>
       </div>
     </div>
 
@@ -108,16 +195,17 @@
 </template>
 
 <script>
-  import GetStartedBtn from './GetStartedBtn.vue';
+  import AccentBtnComp from './AccentBtnComp.vue';
+  import ColoredTextComp from './ColoredTextComp.vue';
 
   export default {
     name: "MainComp",
-    components: { GetStartedBtn }
+    components: { AccentBtnComp, ColoredTextComp }
   }
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/style/variables';
+  @import '../assets/style/variables';  
 
   .hero{
     background-color: #1f2154;
@@ -187,6 +275,7 @@
   }
 
   .services{
+    margin-bottom: 100px;
     .mb-column{
       width: 250px;
       margin-right: 25px;
@@ -236,12 +325,69 @@
       h1{
         margin-bottom: 40px;
       }
-      span{
-        color: $primary-color;
-      }
       .fa-check{
         margin-right: 10px;
         color: $primary-color;
+      }
+    }
+  }
+
+  .courses{
+    padding: 60px 0;
+    background-color: #f6f3f6;
+    .mb-container{
+      .mb-course-card{
+        width: calc(100% / 2);
+        margin-top: 40px;
+        .bg-image{
+          height:150px;
+          width: 150px;
+          border-radius: 50%;
+          margin-right: 20px;
+          background-size: cover;
+          background-position: center;
+        }
+        .bg-image-1{
+          background-image: url('../assets/img/course-02-480x298.jpg');
+        }
+        .bg-image-2{
+          background-image: url('../assets/img/stock-full-hd-03-480x298.jpg');
+        }
+        .bg-image-3{
+          background-image: url('../assets/img/stock-full-hd-04-480x298.jpg');
+        }
+        .bg-image-4{
+          background-image: url('../assets/img/stock-full-hd-06-480x298.jpg');
+        }
+        .bg-image-5{
+          background-image: url('../assets/img/course-featured-image-01-480x298.jpg');
+        }
+        .bg-image-6{
+          background-image: url('../assets/img/stock-full-hd-05-480x298.jpg');
+        }
+        h4{
+          font-weight: 700;
+        }
+        h6{
+          width: 290px;
+          line-height: 30px;
+          font-weight: 600;
+        }
+        .course-decimal-price{
+          font-size: 18px;
+        }
+        .course-statistics{
+          p{
+            margin-right: 20px;
+            color: grey;
+          }
+          i{
+            margin-right: 8px;
+          }
+        }
+      }
+      .courses-btn{
+        margin-top: 50px;
       }
     }
   }
