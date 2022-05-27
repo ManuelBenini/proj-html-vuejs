@@ -3,7 +3,7 @@
   <header>
     <div class="container mb-container h-100 d-flex justify-content-between align-items-center">
       <div class="logo flex-grow-1">
-        <img src="../assets/img/dark-logo.png" alt="logo Max Coach">
+        <img src="../assets/img/light-logo.png" alt="logo Max Coach">
       </div>
 
       <div class="list">
@@ -65,7 +65,6 @@ export default {
     img{
       width: 150px;
       height: 100%;
-      filter: brightness(0) invert(1);
     }
     li{
       margin-left: 55px;
