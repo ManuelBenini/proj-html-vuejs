@@ -29,6 +29,8 @@ export default {
   @import '~bootstrap/scss/bootstrap.scss';
   @import '~@fortawesome/fontawesome-free/css/all.min.css';
   @import '~@fontsource/roboto/index.css';
+  @import '~@fontsource/roboto/900.css';
+  @import '~@fontsource/roboto/500.css';
 
   body{
     font-family: "Roboto";
