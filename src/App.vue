@@ -28,7 +28,11 @@ export default {
 <style lang="scss">
   @import '~bootstrap/scss/bootstrap.scss';
   @import '~@fortawesome/fontawesome-free/css/all.min.css';
+  @import '~@fontsource/roboto/index.css';
 
+  body{
+    font-family: "Roboto";
+  }
   ul{
     list-style: none;
     margin: 0;
