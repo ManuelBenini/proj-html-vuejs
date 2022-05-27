@@ -26,5 +26,16 @@ export default {
 </script>
 
 <style lang="scss">
+  @import '~bootstrap/scss/bootstrap.scss';
+  @import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+  }
 
 </style>
