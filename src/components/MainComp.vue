@@ -15,6 +15,23 @@
         </div>
         <img class="hero-right-person" src="../assets/img/home-6-hero-right-person.png" alt="statistics">
       </div>
+      <div class="side-menu">
+        <div class="icon">
+          <i class="bi bi-caret-right-square-fill"></i>
+        </div>
+
+        <div class="icon">
+          <i class="fa-regular fa-life-ring"></i>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-book"></i>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
     </div>
 
     <div class="achievement">
@@ -190,6 +207,168 @@
       </div>
     </div>
 
+    <div class="testimonials">
+      <div class="container mb-container">
+        <div class="section-title text-center">
+          <h1>Why People Talk About <ColoredTextComp text="MaxCoach"/>?</h1>
+        </div>
+
+        <div class="content d-flex">
+          <div class="image-container">
+            <img src="../assets/img/testimonial-avata-02.jpg" alt="testimonial-image">
+          </div>
+
+          <div class="description">
+            <p>I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.</p>
+            <h6 class="mt-5">MINA HOLLACE</h6>
+            <span>/ Freelancer</span>
+          </div>
+        </div>
+
+        <div class="society-partners">
+          <ul class="d-flex align-items-baseline">
+            <li><a href="#"><img src="../assets/img/client-logo-colored-01.png" alt="partners-logo"></a></li>
+            <li><a href="#"><img src="../assets/img/client-logo-colored-02.png" alt="partners-logo"></a></li>
+            <li><a href="#"><img src="../assets/img/client-logo-colored-03.png" alt="partners-logo"></a></li>
+            <li><a href="#"><img src="../assets/img/client-logo-colored-04.png" alt="partners-logo"></a></li>
+            <li><a href="#"><img src="../assets/img/client-logo-colored-05.png" alt="partners-logo"></a></li>
+            <li><a href="#"><img src="../assets/img/client-logo-colored-06.png" alt="partners-logo"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="blogs">
+      <div class="container mb-container">
+        <div class="section-title text-center">
+          <p><ColoredTextComp text="ENJOY READING ON MAXCOACH" color="grey"/></p>
+          <h1>Latest on <ColoredTextComp text="Our Blogs"/></h1>
+        </div>
+
+        <div class="mb-cards-container mt-5 d-flex">
+          <div class="mb-card">
+            <div class="img-container">
+              <img src="../assets/img/artist-blog-03-480x325.jpeg" alt="blog-image">
+            </div>
+  
+            <div class="description mt-4">
+              <h6><ColoredTextComp text="ARTIST" color="grey"/></h6>
+              <h4>Brush Strokes Energize Trees In Paintings</h4>
+            </div>
+  
+            <div class="blog-statistics d-flex mt-4">
+              <p><i class="fa-regular fa-calendar"></i>May 15, 2020</p>
+              <p><i class="fa-regular fa-eye"></i>688 views</p>
+            </div>
+          </div>
+  
+          <div class="mb-card">
+            <div class="img-container">
+              <img src="../assets/img/artist-blog-01-480x325.jpg" alt="blog-image">
+            </div>
+  
+            <div class="description mt-4">
+              <h6><ColoredTextComp text="ARTIST" color="grey"/></h6>
+              <h4>Brush Strokes Energize Trees In Paintings</h4>
+            </div>
+  
+            <div class="blog-statistics d-flex mt-4">
+              <p><i class="fa-regular fa-calendar"></i>May 15, 2020</p>
+              <p><i class="fa-regular fa-eye"></i>603 views</p>
+            </div>
+          </div>
+  
+          <div class="mb-card">
+            <div class="img-container">
+              <img src="../assets/img/artist-blog-02-480x325.jpg" alt="blog-image">
+            </div>
+  
+            <div class="description mt-4">
+              <h6><ColoredTextComp text="ARTIST" color="grey"/></h6>
+              <h4>Brush Strokes Energize Trees In Paintings</h4>
+            </div>
+  
+            <div class="blog-statistics d-flex mt-4">
+              <p><i class="fa-regular fa-calendar"></i>May 15, 2020</p>
+              <p><i class="fa-regular fa-eye"></i>397 views</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="learn-categories">
+      <div class="container mb-container h-100">
+        <div class="section-title text-center">
+          <p><ColoredTextComp text="WANNA TRANSFORM YOUR LIFE?" color="grey"/></p>
+          <h1>Glad to <ColoredTextComp text="Help You"/> Learn</h1>
+        </div>
+
+        <div class="content d-flex flex-column">
+
+          <div class="mb-cards-container d-flex">
+            <div class="mb-card">
+              <div class="icon-container">
+                <i class="bi bi-flag"></i>
+              </div>
+  
+              <div class="description">
+                <h5>Idea Discussion</h5>
+                <p>Get Teamed up with the specialists who work and teach coding for years at famous universities.</p>
+              </div>
+            </div>
+  
+            <div class="mb-card">
+              <div class="icon-container">
+                <i class="bi bi-gear"></i>
+              </div>
+  
+              <div class="description">
+                <h5>Web Development</h5>
+                <p>Learn to start building a webpage from scratch. You decide your own pace, course and speed.</p>
+              </div>
+            </div>
+  
+            <div class="mb-card">
+              <div class="icon-container">
+                <i class="bi bi-life-preserver"></i>
+              </div>
+  
+              <div class="description">
+                <h5>System Administration</h5>
+                <p>Learners are encouraged to study the mechanism and structure of system administration.</p>
+              </div>
+            </div>
+  
+            <div class="mb-card">
+              <div class="icon-container">
+                <i class="bi bi-display"></i>
+              </div>
+  
+              <div class="description">
+                <h5>Graphic Design</h5>
+                <p>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="bottom-image">
+            <img src="../assets/img/home-6-services-image.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="call-to-action">
+      <div class="container mb-container text-center">
+        <h5>Start today for getting <ColoredTextComp text="Online Certification"/></h5>
+        <h2 class="mb-4">You can be your own guiding star with our help!</h2>
+        <AccentBtnComp style="padding: 16px 65px;" btnText="Get started now"/>
+      </div>
+    </div>
+
   </main>
   
 </template>
@@ -208,6 +387,7 @@
   @import '../assets/style/variables';  
 
   .hero{
+    position: relative;
     background-color: #1f2154;
     color: white;
     max-height: 570px;
@@ -239,6 +419,20 @@
         position: absolute;
         bottom: -165px;
         right: 340px;
+      }
+    }
+    .side-menu{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      padding-top: 7px;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 40px;
+      background-color: white;
+      .icon{
+        margin-bottom: 10px;
+        color: black;
       }
     }
   }
@@ -333,8 +527,8 @@
   }
 
   .courses{
-    padding: 60px 0;
-    background-color: #f6f3f6;
+    padding: 70px 0;
+    background-color: $sections-color;
     .mb-container{
       .mb-course-card{
         width: calc(100% / 2);
@@ -390,5 +584,113 @@
         margin-top: 50px;
       }
     }
+  }
+
+  .testimonials{
+    padding: 70px 0;
+    .content{
+      margin-top: 100px;
+      padding: 0 100px;
+      .image-container{
+        width: 200px;
+        height: 200%;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .description{
+        margin-left: 110px;
+        width: 570px;
+        font-size: 26px;
+        margin-bottom: 70px;
+        h6{
+          font-weight: 600;
+        }
+        span{
+          color: grey;
+          font-size: 14px;
+        } 
+      }
+    }
+    .society-partners{
+      padding: 0 40px;
+      ul{
+        li{
+          margin-right: 70px;
+          a{
+            img{
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .blogs{
+    padding: 70px 0;
+    background-color: $sections-color;
+    .mb-cards-container{
+      .mb-card{
+        width: calc(100% / 3 - 20px);
+        margin-right: 20px;
+        .img-container{
+          img{
+            width: 100%;
+          }
+        }
+        .blog-statistics{
+          p{
+            margin-right: 20px;
+            color: grey;
+          }
+          i{
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .learn-categories{
+    padding-top: 70px;
+    height: 1000px;
+    background: linear-gradient(white, $sections-color);
+    .section-title{
+      margin-bottom: 70px;
+    }
+    .content{
+      height: 84%;
+      justify-content: space-between;
+    }
+    .mb-cards-container{
+      .mb-card{
+        width: calc(100% / 4 - 20px);
+        margin-right: 20px;
+      }
+      .icon-container{
+        font-size: 60px;
+      }
+      .description{
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+    .bottom-image{
+      height: 500px;
+      img{
+        margin-top: 25px;
+        width: 100%;
+        height: 100%;
+      };
+    }
+  }
+
+  .call-to-action{
+    padding: 100px 0;
   }
 </style>

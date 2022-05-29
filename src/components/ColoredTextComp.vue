@@ -1,6 +1,11 @@
 <template>
   
-  <span>{{text}}</span>
+  <span>
+    <span v-if="color !== undefined" :style="`color: ${color};`">{{text}}</span>
+
+    <span v-else class="primary">{{text}}</span>
+  
+  </span>
 
 </template>
 
@@ -8,7 +13,8 @@
 export default {
   name: 'ColoredTextComp',
   props:{
-    text: String
+    text: String,
+    color: String
   }
 }
 </script>
@@ -16,7 +22,7 @@ export default {
 <style lang="scss" scoped>
   @import '../assets/style/variables';  
 
-  span{
+  .primary{
     color: $primary-color;
   }
 
