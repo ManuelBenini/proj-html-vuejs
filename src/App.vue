@@ -1,9 +1,9 @@
 <template>
 
   <div>
-    <HeaderComp />
+    <HeaderComp :headerMenu="headerList" />
     <MainComp />
-    <FooterComp />
+    <FooterComp :menuLists="menuLists" :socialList="socialList" />
 
   </div>
 
@@ -13,6 +13,8 @@
 import HeaderComp from './components/HeaderComp.vue';
 import MainComp from './components/MainComp.vue';
 import FooterComp from './components/FooterComp.vue';
+import headerList from './assets/script/headerList.js'
+import {menuLists, socialList} from './assets/script/footerList'
 
 
 export default {
@@ -21,7 +23,14 @@ export default {
     HeaderComp,
     MainComp,
     FooterComp
-}
+  },
+  data(){
+    return{
+      headerList,
+      menuLists,
+      socialList
+    }
+  }
 }
 </script>
 
@@ -43,7 +52,7 @@ export default {
   h1,h2,h3,h4,h5,h6{
     font-weight: bold;
   }
-  p{
+  p, span{
     font-weight: 400;
   }
   ul{
@@ -51,11 +60,9 @@ export default {
     margin: 0;
     padding: 0;
   }
-  .section-title{
-    font-weight: 400;
-  }
   a{
     text-decoration: none;
+    color: white;
   }
   .mb-container{
     max-width: 1040px;
