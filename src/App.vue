@@ -37,9 +37,7 @@ export default {
 <style lang="scss">
   @import '~bootstrap/scss/bootstrap.scss';
   @import '~@fortawesome/fontawesome-free/css/all.min.css';
-  @import '~@fontsource/manjari/index.css';
-  @import '~@fontsource/manjari/100.css';
-  @import '~@fontsource/manjari/700.css';
+  @import '~@fontsource/atma/index.css';
   @import './assets/style/variables';
 
   @font-face { font-family: Gilroy; font-weight: 400; src: url('./assets/Gilroy-font/Gilroy-Light.otf'); } 

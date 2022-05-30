@@ -692,6 +692,7 @@
       }
       span{
         font-size: 14px;
+        font-family: 'atma';
       }
     }
   }
