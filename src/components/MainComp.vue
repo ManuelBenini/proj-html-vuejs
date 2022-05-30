@@ -4,17 +4,19 @@
     <div class="hero pt-5 text-center">
       <div class="mb-container">
         <h2>Learn At Your Own Pace!</h2>
-        <p>Get teamed up with people of the same will.</p>
+        <p class="mb-4">Get teamed up with people of the same will.</p>
         <AccentBtnComp btnText="Get started for free" />
       </div>
-      <div class="jumbo-images position-relative pt-5">
-        <img class="hero-left-person" src="../assets/img/home-6-hero-left-person.png" alt="statistics">
-        <div class="hero-big-image-container position-relative">
-          <img class="hero-big-image" src="../assets/img/home-6-hero-poster-final.jpg" alt="statistics">
-          <img class="youtube-icon" src="../assets/img/icon-youtube-play.png" alt="statistics">
+      <div class="jumbo-images position-relative">
+        <img class="left-person" src="../assets/img/home-6-hero-left-person.png" alt="left-image">
+        <div class="big-image position-relative">
+          <img class="hero-poster" src="../assets/img/home-6-hero-poster-final.jpg" alt="center-image">
+          <img class="youtube" src="../assets/img/icon-youtube-play.png" alt="youtube-icon">
         </div>
-        <img class="hero-right-person" src="../assets/img/home-6-hero-right-person.png" alt="statistics">
+        <img class="right-person" src="../assets/img/home-6-hero-right-person.png" alt="right-image">
+        <div class="blank-div"></div>
       </div>
+
       <div class="side-menu">
         <div class="icon">
          <a href="#"><i class="bi bi-caret-right-square-fill"></i></a>  
@@ -34,7 +36,17 @@
       </div>
     </div>
 
-    <div class="achievement">
+    <div class="achievement position-relative">
+      <div class="circles">
+        <div class="green"></div>
+        <div class="orange-fill"></div>
+        <div class="yellow-fill"></div>
+        <div class="purple-fill"></div>
+        <div class="green-fill"></div>
+        <div class="pink-fill"></div>
+        <div class="azure-fill"></div>
+        <div class="pink"></div>
+      </div>
       <div class="mb-container text-center">
         <div class="description">
           <h3>Let passion and determination be the guide along the way and develop at your own pace that's comfortable.</h3>
@@ -216,9 +228,16 @@
           <h1>Why People Talk About <ColoredTextComp text="MaxCoach"/>?</h1>
         </div>
 
-        <div class="content d-flex">
-          <div class="image-container">
+        <div class="content d-flex position-relative">
+          <div class="image-container position-relative">
             <img src="../assets/img/testimonial-avata-02.jpg" alt="testimonial-image">
+          </div>
+
+          <img class="shape" src="../assets/img/maxcoach-shape-05.png" alt="testimonial-image">
+          <div class="circles">
+            <div class="brown-fill"></div>
+            <div class="brown-fill brown-fill2"></div>
+            <div class="brown-fill brown-fill3"></div>
           </div>
 
           <div class="description">
@@ -301,14 +320,19 @@
       </div>
     </div>
 
-    <div class="learn-categories">
+    <div class="learn-categories position-relative">
+      <div class="circles">
+        <div class="green"></div>
+        <div class="orange-fill"></div>
+        <div class="green-fill"></div>
+      </div>
       <div class="mb-container h-100">
         <div class="section-title text-center">
           <p><ColoredTextComp text="WANNA TRANSFORM YOUR LIFE?" color="grey"/></p>
           <h1>Glad to <ColoredTextComp text="Help You"/> Learn</h1>
         </div>
 
-        <div class="content d-flex flex-column">
+        <div class="content">
 
           <div class="mb-cards-container d-flex">
             <div class="mb-card">
@@ -364,7 +388,12 @@
       </div>
     </div>
 
-    <div class="call-to-action">
+    <div class="call-to-action position-relative">
+      <div class="circles">
+        <div class="yellow-fill"></div>
+        <div class="pink-fill"></div>
+        <div class="azure-fill"></div>
+      </div>
       <div class="mb-container text-center">
         <h5>Start today for getting <ColoredTextComp text="Online Certification"/></h5>
         <h2 class="mb-4">You can be your own guiding star with our help!</h2>
@@ -393,34 +422,50 @@
     position: relative;
     background-color: #1f2154;
     color: white;
-    max-height: 570px;
+    max-height: 646px;
     .jumbo-images{
+      text-align: center;
+      height: 487px;
+      margin: 0 auto;
+      margin-top: 80px;
       overflow: hidden;
-      height: 515px;
-      .hero-left-person{
+      z-index: 2;
+      .left-person{
         position: absolute;
-        bottom: 0;
-        left: 220px;
+        z-index: 10;
+        top: -32px;
+        left: 210px;
       }
-      .hero-big-image-container{
-        width: 800px;
-        margin: 0 auto;
-        .hero-big-image{
+      .right-person{
+        position: absolute;
+        z-index: 9;
+        bottom: -163px;
+        right: 340px;
+      }
+      .blank-div{
+        position: absolute;
+        z-index: 60;
+        bottom: -37px;
+        right: 278px;
+        background: white;
+        height: 65px;
+        width: 100px;
+      }
+      .big-image{
+        .hero-poster{
+          position: relative;
+          z-index: 10;
           border: 20px solid white;
-          border-radius: 15px;
+          border-radius: 20px;
           box-shadow: 1px 1px 15px rgba($color: #000000, $alpha: 0.1);
         }
-        .youtube-icon{
+        .youtube{
           position: absolute;
           top: 50%;
           left: 50%;
+          z-index: 20;
           transform: translate(-50%, -50%);
         }
-      }
-      .hero-right-person{
-        position: absolute;
-        bottom: -165px;
-        right: 340px;
       }
     }
     .side-menu{
@@ -442,6 +487,76 @@
   }
 
   .achievement{
+    .circles{
+      & *{
+        position: absolute;
+        border-radius: 50%;
+        border: 1px solid
+      }
+      .green{
+        top: 150px;
+        left: 280px;
+        width: 50px;
+        height: 50px;
+        border: 5px solid #8fd6ca;
+      }
+      .orange-fill{
+        top: 350px;
+        left: 310px;
+        width: 30px;
+        height: 30px;
+        background-color: #ff8265;
+        border-color: #ff5000;
+      }
+      .yellow-fill{
+        top: 520px;
+        left: 180px;
+        width: 40px;
+        height: 40px;
+        background-color: #ebb860;
+        border-color: #e7ab37;
+      }
+      .purple-fill{
+        top: 190px;
+        left: 830px;
+        width: 20px;
+        height: 20px;
+        background-color: #bc71fe;
+        border-color: #b75cfe;
+      }
+      .green-fill{
+        top: 90px;
+        left: 1570px;
+        width: 40px;
+        height: 40px;
+        background-color: #bce6df;
+        border: none;
+      }
+      .pink-fill{
+        top: 275px;
+        left: 1570px;
+        width: 35px;
+        height: 35px;
+        background-color: #e88c98;
+        border-color: #e37283;
+      }
+      .azure-fill{
+        top: 425px;
+        left: 1370px;
+        width: 35px;
+        height: 35px;
+        background-color: #aab8f1;
+        border-color: #9fafef;
+      }
+      .pink{
+        top: 505px;
+        left: 1560px;
+        width: 55px;
+        height: 55px;
+        background-color: white;
+        border: 8px solid #f6b9aa;
+      }
+    }
     .mb-container{
       background-image: url('../assets/img/background-pattern-grid-line.png');
       background-size: 331px 100px;
@@ -620,8 +735,41 @@
         border-radius: 50%;
         overflow: hidden;
         img{
+          position: relative;
+          z-index: 2;
           width: 100%;
           height: 100%;
+        }
+      }
+      .shape{
+        z-index: 1;
+        position: absolute;
+        bottom: 53px;
+        left: 151px;
+        width: 13%;
+      }
+      .circles{
+        & *{
+          position: absolute;
+          border-radius: 50%;
+          border: 1px solid
+        }
+        .brown-fill{
+          z-index: 1;
+          top: -15px;
+          left: 120px;
+          width: 70px;
+          height: 70px;
+          background-color: #d2a98e;
+          border: none;
+        }
+        .brown-fill2{
+          top: 5px;
+          left: 190px;
+        }
+        .brown-fill3{
+          top: 50px;
+          left: 99px;
         }
       }
       .description{
@@ -633,7 +781,8 @@
           font-weight: 400;
         }
         h6{
-          font-weight: 600;
+          font-weight: bold;
+          margin-bottom: 0;
         }
         span{
           color: grey;
@@ -691,8 +840,37 @@
 
   .learn-categories{
     padding-top: 70px;
-    height: 1000px;
     background: linear-gradient(white, $sections-color);
+    .circles{
+      & *{
+        position: absolute;
+        border-radius: 50%;
+        border: 1px solid
+      }
+      .green{
+        top: 510px;
+        left: 480px;
+        width: 50px;
+        height: 50px;
+        border: 5px solid #8fd6ca;
+      }
+      .orange-fill{
+        bottom: 50px;
+        left: 110px;
+        width: 30px;
+        height: 30px;
+        background-color: #ff8265;
+        border-color: #ff5000;
+      }
+      .green-fill{
+        bottom: 400px;
+        left: 1500px;
+        width: 40px;
+        height: 40px;
+        background-color: #bce6df;
+        border: none;
+      }
+    }
     .section-title{
       margin-bottom: 70px;
     }
@@ -716,16 +894,47 @@
       }
     }
     .bottom-image{
-      height: 500px;
+      margin-top: 110px;
       img{
-        margin-top: 25px;
         width: 100%;
         height: 100%;
+        transform: translate(0, 28px)
       };
     }
   }
 
   .call-to-action{
     padding: 100px 0;
+    .circles{
+      & *{
+        position: absolute;
+        border-radius: 50%;
+        border: 1px solid
+      }
+      .yellow-fill{
+        top: 150px;
+        left: 120px;
+        width: 40px;
+        height: 40px;
+        background-color: #ebb860;
+        border-color: #e7ab37;
+      }
+      .pink-fill{
+        top: 5px;
+        left: 1430px;
+        width: 35px;
+        height: 35px;
+        background-color: #e88c98;
+        border-color: #e37283;
+      }
+      .azure-fill{
+        bottom: 175px;
+        left: 1670px;
+        width: 35px;
+        height: 35px;
+        background-color: #aab8f1;
+        border-color: #9fafef;
+      }
+    }
   }
 </style>
