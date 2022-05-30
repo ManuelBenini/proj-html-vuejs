@@ -496,9 +496,13 @@
     background-color: #1f2154;
     color: white;
     max-height: 646px;
-    .whiteHoveredBtn:hover{
-      background-color: white;
-      color: $primary-color;
+    .whiteHoveredBtn{
+      z-index: 99;
+      position: relative;
+      &:hover{
+        background-color: white;
+        color: $primary-color;
+      }
     }
     .elementor-shape{
       transform: rotate(180deg);
@@ -508,6 +512,7 @@
       line-height: 0;
       direction: ltr;
       overflow: hidden;
+      z-index: 1;
       svg{
         height: 550px;
         display: block;

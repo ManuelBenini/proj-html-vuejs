@@ -44,6 +44,7 @@
 </script>
 
 <style lang="scss" scoped>
+  @import '../assets/style/variables';
 
   header{
     height: 60px;
@@ -57,6 +58,12 @@
       margin-left: 35px;
       font-weight: 400;
       font-size: 14px;
+      &:hover{
+        color: $primary-color;
+      }
+      &:hover a{
+        color: $primary-color;
+      }
       .chevron{
         line-height:20px;
         padding-left: 6px;
@@ -79,6 +86,10 @@
         font-size: 10px;
         border-radius: 50%;
         font-weight: 400;
+        &:hover{
+          background-color: $primary-color;
+          border-color: $primary-color;
+        }
       }
     }
     .user{
@@ -91,6 +102,9 @@
       width: 15px;
       border: 2px solid white;
       border-radius: 50%;
+      &:hover{
+        border-color: $primary-color;
+      }
     }
     
     .search{
