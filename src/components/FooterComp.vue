@@ -65,6 +65,11 @@ export default {
   @import '../assets/style/variables';
 
   footer{
+    p{
+      font-weight: 400;
+      margin: 0;
+      margin-top: 16px;
+    }
     position: relative;
     padding: 50px 0;
     height: 450px;

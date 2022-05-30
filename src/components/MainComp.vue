@@ -2,7 +2,7 @@
 
   <main>
     <div class="hero pt-5 text-center">
-      <div class="container mb-container">
+      <div class="mb-container">
         <h2>Learn At Your Own Pace!</h2>
         <p>Get teamed up with people of the same will.</p>
         <AccentBtnComp btnText="Get started for free" />
@@ -17,54 +17,57 @@
       </div>
       <div class="side-menu">
         <div class="icon">
-          <i class="bi bi-caret-right-square-fill"></i>
+         <a href="#"><i class="bi bi-caret-right-square-fill"></i></a>  
         </div>
 
         <div class="icon">
-          <i class="fa-regular fa-life-ring"></i>
+         <a href="#"><i class="fa-regular fa-life-ring"></i></a> 
         </div>
 
         <div class="icon">
-          <i class="fa-solid fa-book"></i>
+         <a href="#"><i class="fa-solid fa-book"></i></a>  
         </div>
 
         <div class="icon">
-          <i class="fa-solid fa-cart-shopping"></i>
+         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>  
         </div>
       </div>
     </div>
 
     <div class="achievement">
-      <div class="container mb-container text-center">
-        <h3>Let passion and determination be the guide along the way and develop at your own pace that's comfortable.</h3>
-        <div class="quote-author text-center">
-          <h6>FANNIE MORENO</h6>
-          <span>/Founder & CEO</span>
+      <div class="mb-container text-center">
+        <div class="description">
+          <h3>Let passion and determination be the guide along the way and develop at your own pace that's comfortable.</h3>
+          <div class="quote-author text-center">
+            <h6>FANNIE MORENO</h6>
+            <span>/Founder & CEO</span>
+          </div>
+  
+          <div class="statistics d-flex justify-content-between">
+            <div>
+              <h3>1.926</h3>
+              <span>FINISHED SESSIONS</span>
+            </div>
+            <div>
+              <h3>3.092+</h3>
+              <span>ENROLLED LEARNERS</span>
+            </div>
+            <div>
+              <h3>200</h3>
+              <span>ONLINE ISTRUCTORS</span>
+            </div>
+            <div>
+              <h3>100%</h3>
+              <span>SATISFACTION RATE</span>
+            </div>
+          </div>
         </div>
 
-        <div class="statistics d-flex justify-content-between">
-          <div>
-            <h3>1.926</h3>
-            <span>FINISHED SESSIONS</span>
-          </div>
-          <div>
-            <h3>3.092+</h3>
-            <span>ENROLLED LEARNERS</span>
-          </div>
-          <div>
-            <h3>200</h3>
-            <span>ONLINE ISTRUCTORS</span>
-          </div>
-          <div>
-            <h3>100%</h3>
-            <span>SATISFACTION RATE</span>
-          </div>
-        </div>
       </div>
     </div>
 
     <div class="services">
-      <div class="container mb-container d-flex">
+      <div class="mb-container d-flex">
 
         <div class="mb-columns d-flex">
 
@@ -114,13 +117,13 @@
           <p><i class="fa-solid fa-check"></i> Partecipate in events to join others</p>
           <p><i class="fa-solid fa-check"></i> Get the desired certificate delivered at house</p>
 
-          <AccentBtnComp btnText="Get started for free" />
+          <AccentBtnComp class="mt-3" btnText="Get started for free" />
         </div>
       </div>
     </div>
 
     <div class="courses">
-      <div class="container mb-container">
+      <div class="mb-container">
         <div class="section-title text-center">
           <p>CHOOSE A COURSE TO GET STARTED</p>
           <h1>Latest Featured <ColoredTextComp text="Courses"/> </h1>
@@ -208,7 +211,7 @@
     </div>
 
     <div class="testimonials">
-      <div class="container mb-container">
+      <div class="mb-container">
         <div class="section-title text-center">
           <h1>Why People Talk About <ColoredTextComp text="MaxCoach"/>?</h1>
         </div>
@@ -239,7 +242,7 @@
     </div>
 
     <div class="blogs">
-      <div class="container mb-container">
+      <div class="mb-container">
         <div class="section-title text-center">
           <p><ColoredTextComp text="ENJOY READING ON MAXCOACH" color="grey"/></p>
           <h1>Latest on <ColoredTextComp text="Our Blogs"/></h1>
@@ -299,7 +302,7 @@
     </div>
 
     <div class="learn-categories">
-      <div class="container mb-container h-100">
+      <div class="mb-container h-100">
         <div class="section-title text-center">
           <p><ColoredTextComp text="WANNA TRANSFORM YOUR LIFE?" color="grey"/></p>
           <h1>Glad to <ColoredTextComp text="Help You"/> Learn</h1>
@@ -362,7 +365,7 @@
     </div>
 
     <div class="call-to-action">
-      <div class="container mb-container text-center">
+      <div class="mb-container text-center">
         <h5>Start today for getting <ColoredTextComp text="Online Certification"/></h5>
         <h2 class="mb-4">You can be your own guiding star with our help!</h2>
         <AccentBtnComp style="padding: 16px 65px;" btnText="Get started now"/>
@@ -391,7 +394,6 @@
     background-color: #1f2154;
     color: white;
     max-height: 570px;
-    margin-bottom: 100px;
     .jumbo-images{
       overflow: hidden;
       height: 515px;
@@ -430,19 +432,25 @@
       right: 0;
       width: 40px;
       background-color: white;
+      a{
+        color: black;
+      }
       .icon{
         margin-bottom: 10px;
-        color: black;
       }
     }
   }
 
   .achievement{
-    margin-bottom: 100px;
     .mb-container{
-      padding-top: 150px;
+      background-image: url('../assets/img/background-pattern-grid-line.png');
+      background-size: 331px 100px;
+      padding: 0 08px;
+      padding-top: 250px;
+      
       h3{
-        max-width: 550px;
+        line-height: 40px;
+        max-width: 590px;
         margin: 0 auto;
       }
       .quote-author{
@@ -452,6 +460,7 @@
         span{
           color: grey;
           font-size: 14px;
+          font-weight: 400;
         }
       }
     }
@@ -460,20 +469,27 @@
       padding-top: 100px;
       h3{
         color: $primary-color;
-        font-weight: 900;
+        font-weight: bold;
       }
       span{
         font-size: 13px;
+        font-weight: 400;
       }
     }
   }
 
   .services{
-    margin-bottom: 100px;
+    .mb-container{
+      padding-top: 130px;
+      padding-bottom: 60px;
+      background-image: url('../assets/img/background-pattern-grid-line.png');
+      background-size: 331px 100px;
+    }
     .mb-column{
       width: 250px;
-      margin-right: 25px;
+      margin-right: 15px;
       .mb-service-card{
+        background-color: white;
         margin-bottom: 25px;
         box-shadow: 1px 1px 15px rgba($color: #000000, $alpha: 0.1);
         .card-description{
@@ -481,6 +497,7 @@
           padding-top: 25px;
           p{
             font-size: 15px;
+            font-weight: 400;
           }
           h5{
             color: #1f2154;
@@ -511,13 +528,17 @@
     }
     .mb-column-2{
       margin-top: 50px;
+      margin-left: 10px;
     }
     .premise{
-      width: 400px;
       padding-top: 150px;
-      margin-left: 100px;
+      margin-left: 52px;
+      width: 380px;
       h1{
         margin-bottom: 40px;
+      }
+      p{
+        font-weight: 400;
       }
       .fa-check{
         margin-right: 10px;
@@ -527,7 +548,7 @@
   }
 
   .courses{
-    padding: 70px 0;
+    padding: 100px 0;
     background-color: $sections-color;
     .mb-container{
       .mb-course-card{
@@ -566,6 +587,7 @@
           width: 290px;
           line-height: 30px;
           font-weight: 600;
+          color: #342f5d;
         }
         .course-decimal-price{
           font-size: 18px;
@@ -574,6 +596,7 @@
           p{
             margin-right: 20px;
             color: grey;
+            font-weight: 400;
           }
           i{
             margin-right: 8px;
@@ -587,7 +610,7 @@
   }
 
   .testimonials{
-    padding: 70px 0;
+    padding: 80px 0;
     .content{
       margin-top: 100px;
       padding: 0 100px;
@@ -606,12 +629,16 @@
         width: 570px;
         font-size: 26px;
         margin-bottom: 70px;
+        p{
+          font-weight: 400;
+        }
         h6{
           font-weight: 600;
         }
         span{
           color: grey;
           font-size: 14px;
+          font-weight: 400;
         } 
       }
     }
@@ -640,12 +667,19 @@
         .img-container{
           img{
             width: 100%;
+            border-radius: 5px;
+          }
+        }
+        .description{
+          span{
+            font-weight: 400;
           }
         }
         .blog-statistics{
           p{
             margin-right: 20px;
             color: grey;
+            font-weight: 400;
           }
           i{
             margin-right: 8px;
@@ -677,6 +711,7 @@
       .description{
         p{
           font-size: 14px;
+          font-weight: 400;
         }
       }
     }

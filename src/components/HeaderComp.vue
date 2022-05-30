@@ -63,20 +63,22 @@ export default {
     background-color: #1f2154;
     color: white;
     img{
-      width: 150px;
+      width: 130px;
       height: 100%;
     }
     li{
-      margin-left: 55px;
+      margin-left: 35px;
+      font-weight: 400;
+      font-size: 14px;
       a{
         color: white;
       }
       .fa-user{
-        font-size: 13px;
+        font-size: 12px;
         text-align: center;
         padding-top: 1px;
-        height: 18px;
-        width: 18px;
+        height: 17px;
+        width: 17px;
         border: 2px solid white;
         border-radius: 50%;
       }
@@ -104,11 +106,12 @@ export default {
         line-height: 10px;
         font-size: 11px;
         border-radius: 50%;
+        font-weight: 400;
       }
     }
     .user{
       margin-left: 25px;
-      margin-right: 15px;
+      margin-right: 18px;
     }
     .search{
       input{
@@ -118,6 +121,9 @@ export default {
         width: 180px;
         padding-left: 20px;
         padding-bottom: 5px;
+        &::placeholder{
+          font-size: 14px;
+        }
       }
       i{
         position: absolute;

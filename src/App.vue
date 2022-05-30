@@ -28,25 +28,38 @@ export default {
 <style lang="scss">
   @import '~bootstrap/scss/bootstrap.scss';
   @import '~@fortawesome/fontawesome-free/css/all.min.css';
-  @import '~@fontsource/poppins/index.css';
-  @import '~@fontsource/poppins/600.css';
-  @import '~@fontsource/poppins/700.css';
-  @import '~@fontsource/poppins/800.css';
-  @import '~@fontsource/poppins/900.css';
+  @import '~@fontsource/manjari/index.css';
+  @import '~@fontsource/manjari/100.css';
+  @import '~@fontsource/manjari/700.css';
+  @import './assets/style/variables';
+
+  @font-face { font-family: Gilroy; font-weight: 400; src: url('./assets/Gilroy-font/Gilroy-Light.otf'); } 
+  @font-face { font-family: Gilroy; font-weight: bold; src: url('./assets/Gilroy-font/Gilroy-ExtraBold.otf');}
 
   body{
-    font-family: "Poppins";
+    font-family: $primary-font;
+    font-weight: bold;
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+  }
+  p{
+    font-weight: 400;
   }
   ul{
     list-style: none;
     margin: 0;
     padding: 0;
   }
+  .section-title{
+    font-weight: 400;
+  }
   a{
     text-decoration: none;
   }
   .mb-container{
-    max-width: 1210px;
+    max-width: 1040px;
+    margin: 0 auto;
   }
 
 </style>
