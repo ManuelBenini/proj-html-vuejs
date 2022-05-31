@@ -9,7 +9,7 @@
         <ul v-for="(menu, index) in menuLists" :key="`menu${index}`" :class="menu.ulClass">
           <li :class="menu.liClass"><h5>{{menu.title}}</h5></li>
           <li v-for="(text, counter) in menu.text" :key="`text${counter}`">
-            <p>{{text}}</p>
+            <p> <a href="#">{{text}}</a></p>
           </li>
         </ul>
 
@@ -67,6 +67,12 @@ export default {
       .right-col{
         margin-left: 70px;
       }
+      a{
+        color: black;
+      }
+      a:hover{
+        color: $primary-color;
+      }
     }
     .social{
       margin-bottom: 90px;
@@ -74,6 +80,9 @@ export default {
       a{
         color: #b1b1b1;
         margin-right: 30px;
+      }
+      a:hover{
+        color: $primary-color;
       }
     }
     .credits{
