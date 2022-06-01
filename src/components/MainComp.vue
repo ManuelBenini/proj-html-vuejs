@@ -72,26 +72,14 @@
           </div>
   
           <div class="statistics d-flex justify-content-between">
-            <div>
-              <h3>1.926</h3>
-              <span>FINISHED SESSIONS</span>
-            </div>
 
-            <div>
-              <h3>3.092+</h3>
-              <span>ENROLLED LEARNERS</span>
-            </div>
+            <A_StatisticsList title="1.926"  text="FINISHED SESSIONS" />
+            <A_StatisticsList title="3.092+"  text="ENROLLED LEARNERS" />
+            <A_StatisticsList title="200"  text="ONLINE ISTRUCTORS" />
+            <A_StatisticsList title="100%"  text="SATISFACTION RATE" />
 
-            <div>
-              <h3>200</h3>
-              <span>ONLINE ISTRUCTORS</span>
-            </div>
-
-            <div>
-              <h3>100%</h3>
-              <span>SATISFACTION RATE</span>
-            </div>
           </div>
+          
         </div>
 
       </div>
@@ -481,10 +469,11 @@
 <script>
   import AccentBtnComp from './AccentBtnComp.vue';
   import ColoredTextComp from './ColoredTextComp.vue';
+import A_StatisticsList from './A_StatisticsList.vue';
 
   export default {
     name: "MainComp",
-    components: { AccentBtnComp, ColoredTextComp }
+    components: { AccentBtnComp, ColoredTextComp, A_StatisticsList }
   }
 </script>
 
@@ -690,15 +679,7 @@
     .statistics{
       padding: 0 30px;
       padding-top: 100px;
-      h3{
-        color: $primary-color;
-        font-weight: bold;
-        font-size: 33px;
-      }
-      span{
-        font-size: 14px;
-        font-family: 'atma';
-      }
+      
     }
   }
 
