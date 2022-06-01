@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'CheckboxOptions',
+  name: 'CheckboxComp',
   props:{
     text: String
   }

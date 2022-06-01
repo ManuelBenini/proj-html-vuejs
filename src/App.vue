@@ -1,6 +1,7 @@
 <template>
 
   <div>
+    
     <HeaderComp :headerMenu="headerList" />
     <MainComp />
     <FooterComp :menuLists="menuLists" :socialList="socialList" />
