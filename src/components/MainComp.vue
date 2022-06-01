@@ -67,8 +67,7 @@
         <div class="description">
           <h3>Let passion and determination be the guide along the way and develop at your own pace that's comfortable.</h3>
           <div class="quote-author text-center">
-            <h6>FANNIE MORENO</h6>
-            <span>/Founder & CEO</span>
+            <QuoteAuthor author="FANNIE MORENO" role="Founder & CEO" />
           </div>
   
           <div class="statistics d-flex justify-content-between">
@@ -155,96 +154,68 @@
     <div class="courses">
       <div class="mb-container">
 
-        <div class="section-title text-center">
-          <p>CHOOSE A COURSE TO GET STARTED</p>
-          <h1>Latest Featured <ColoredTextComp text="Courses"/> </h1>
+        <div class="text-center">
+          <SectionTitle 
+            title="CHOOSE A COURSE TO GET STARTED" 
+            firstText="Latest Featured" 
+            coloredText="Courses"
+          />
         </div>
 
         <div class="mb-course-cards-container d-flex flex-wrap">
 
-          <div class="mb-course-card d-flex">
-            <div class="bg-image bg-image-1"></div>
+          <CourseCard 
+            imageNumber="1" 
+            coloredIntegerPrice="$40"
+            coloredDecimalPrice=".00"
+            courseDescription="Learning to Write as a Professional Author"
+            lessons="20"
+            students="50" 
+          />
 
-            <div class="course-description">
-              <h4><ColoredTextComp text="$40"/><ColoredTextComp class="course-decimal-price" text=".00"/></h4>
-              <h6>Learning to Write as a Professional Author</h6>
-              <div class="course-statistics d-flex">
-                <p><i class="fa-regular fa-file-lines"></i>20 Lessons</p>
-                <p><i class="fa-regular fa-user"></i>50 Students</p>
-              </div>
-            </div>
+          <CourseCard 
+            imageNumber="2" 
+            coloredIntegerPrice="free"
+            courseDescription="Customer-centric Info-Tech Strategies"
+            lessons="24"
+            students="769" 
+          />
 
-          </div>
+          <CourseCard 
+            imageNumber="3" 
+            coloredIntegerPrice="$19"
+            coloredDecimalPrice=".00"
+            courseDescription="Open Programming courses for Everyone: Python"
+            lessons="17"
+            students="62" 
+          />
 
-          <div class="mb-course-card d-flex">
-            <div class="bg-image bg-image-2"></div>
+          <CourseCard 
+            imageNumber="4" 
+            coloredIntegerPrice="$26"
+            coloredDecimalPrice=".00"
+            courseDescription="Academic Listening and Note-taking"
+            lessons="14"
+            students="67" 
+          />
 
-            <div class="course-description">
-              <h4><ColoredTextComp text="Free"/></h4>
-              <h6>Customer-centric Info-Tech Strategies</h6>
-              <div class="course-statistics d-flex">
-                <p><i class="fa-regular fa-file-lines"></i>24 Lessons</p>
-                <p><i class="fa-regular fa-user"></i>769 Students</p>
-              </div>
-            </div>
+          <CourseCard 
+            imageNumber="5" 
+            coloredIntegerPrice="$39"
+            coloredDecimalPrice=".00"
+            courseDescription="Master jQuery in a Short Period of Time"
+            lessons="6"
+            students="51" 
+          />
 
-          </div>
-
-          <div class="mb-course-card d-flex">
-            <div class="bg-image bg-image-3"></div>
-
-            <div class="course-description">
-              <h4><ColoredTextComp text="$19"/><ColoredTextComp class="course-decimal-price" text=".00"/></h4>
-              <h6>Open Programming courses for Everyone: Python</h6>
-              <div class="course-statistics d-flex">
-                <p><i class="fa-regular fa-file-lines"></i>17 Lessons</p>
-                <p><i class="fa-regular fa-user"></i>62 Students</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="mb-course-card d-flex">
-            <div class="bg-image bg-image-4"></div>
-
-            <div class="course-description">
-              <h4><ColoredTextComp text="$26"/><ColoredTextComp class="course-decimal-price" text=".00"/></h4>
-              <h6>Academic Listening and Note-taking</h6>
-              <div class="course-statistics d-flex">
-                <p><i class="fa-regular fa-file-lines"></i>14 Lessons</p>
-                <p><i class="fa-regular fa-user"></i>67 Students</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="mb-course-card d-flex">
-            <div class="bg-image bg-image-5"></div>
-
-            <div class="course-description">
-              <h4><ColoredTextComp text="$39"/><ColoredTextComp class="course-decimal-price" text=".00"/></h4>
-              <h6>Master jQuery in a Short Period of Time</h6>
-              <div class="course-statistics d-flex">
-                <p><i class="fa-regular fa-file-lines"></i>6 Lessons</p>
-                <p><i class="fa-regular fa-user"></i>51 Students</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="mb-course-card d-flex">
-            <div class="bg-image bg-image-6"></div>
-
-            <div class="course-description">
-              <h4><ColoredTextComp text="$59"/><ColoredTextComp class="course-decimal-price" text=".00"/></h4>
-              <h6>Introduction to Javascript for Beginners</h6>
-              <div class="course-statistics d-flex">
-                <p><i class="fa-regular fa-file-lines"></i>14 Lessons</p>
-                <p><i class="fa-regular fa-user"></i>76 Students</p>
-              </div>
-            </div>
-
-          </div>
+          <CourseCard 
+            imageNumber="6" 
+            coloredIntegerPrice="$59"
+            coloredDecimalPrice=".00"
+            courseDescription="Introduction to Javascript for Beginners"
+            lessons="14"
+            students="76" 
+          />
 
         </div>
 
@@ -258,9 +229,10 @@
     <div class="testimonials">
       <div class="mb-container">
 
-        <div class="section-title text-center">
-          <h1>Why People Talk About <ColoredTextComp text="MaxCoach"/>?</h1>
+        <div class="text-center">
+          <SectionTitle firstText="Why People Talk About" coloredText="MaxCoach" secondText="?" />
         </div>
+
 
         <div class="content d-flex position-relative">
 
@@ -277,21 +249,21 @@
 
           <div class="description">
             <p>I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.</p>
-            <h6 class="mt-5">MINA HOLLACE</h6>
-            <span>/ Freelancer</span>
+            <QuoteAuthor author="MINA HOLLACE" role="Freelancer" />
           </div>
+
 
         </div>
 
         <div class="society-partners">
 
           <ul class="d-flex align-items-baseline">
-            <li><a href="#"><img src="../assets/img/client-logo-colored-01.png" alt="partners-logo"></a></li>
-            <li><a href="#"><img src="../assets/img/client-logo-colored-02.png" alt="partners-logo"></a></li>
-            <li><a href="#"><img src="../assets/img/client-logo-colored-03.png" alt="partners-logo"></a></li>
-            <li><a href="#"><img src="../assets/img/client-logo-colored-04.png" alt="partners-logo"></a></li>
-            <li><a href="#"><img src="../assets/img/client-logo-colored-05.png" alt="partners-logo"></a></li>
-            <li><a href="#"><img src="../assets/img/client-logo-colored-06.png" alt="partners-logo"></a></li>
+            <li><a href="https://it.wikipedia.org/wiki/Acqua" target="_blank"><img src="../assets/img/client-logo-colored-01.png" alt="partners-logo"></a></li>
+            <li><a href="https://www.adroll.com/" target="_blank"><img src="../assets/img/client-logo-colored-02.png" alt="partners-logo"></a></li>
+            <li><a href="https://www.mozilla.org/it/firefox/" target="_blank"><img src="../assets/img/client-logo-colored-03.png" alt="partners-logo"></a></li>
+            <li><a href="https://www.mobili-per-bambini.it/" target="_blank"><img src="../assets/img/client-logo-colored-04.png" alt="partners-logo"></a></li>
+            <li><a href="https://bullfitfashion.com/it/" target="_blank"><img src="../assets/img/client-logo-colored-05.png" alt="partners-logo"></a></li>
+            <li><a href="http://www.sixbasetech.com/" target="_blank"><img src="../assets/img/client-logo-colored-06.png" alt="partners-logo"></a></li>
           </ul>
 
         </div>
@@ -303,66 +275,35 @@
 
       <div class="mb-container">
 
-        <div class="section-title text-center">
-          <p>ENJOY READING ON MAXCOACH</p>
-          <h1>Latest on <ColoredTextComp text="Our Blogs"/></h1>
+        <div class="text-center">
+          <SectionTitle title="ENJOY READING ON MAXCOACH" firstText="Latest on" coloredText="Our Blogs" />
         </div>
 
         <div class="mb-cards-container mt-5 d-flex">
 
-          <div class="mb-card">
+          <BlogCard 
+            image="artist-blog-03-480x325" 
+            :isImageJpeg="true"
+            artist="ARTIST" 
+            blogTitle="Brush Strokes Energize Trees In Paintings"
+            date="May 15, 2020" views="688"
+          />
 
-            <div class="img-container">
-              <img src="../assets/img/artist-blog-03-480x325.jpeg" alt="blog-image">
-            </div>
-  
-            <div class="description mt-4">
-              <h6><ColoredTextComp text="ARTIST" color="grey"/></h6>
-              <h4>Brush Strokes Energize Trees In Paintings</h4>
-            </div>
-  
-            <div class="blog-statistics d-flex mt-4">
-              <p><i class="fa-regular fa-calendar"></i>May 15, 2020</p>
-              <p><i class="fa-regular fa-eye"></i>688 views</p>
-            </div>
+          <BlogCard 
+            image="artist-blog-01-480x325" 
+            :isImageJpeg="false"
+            artist="ARTIST" 
+            blogTitle="Pocket-Sized Notebooks Hold Miniature Paintings"
+            date="May 15, 2020" views="603"
+          />
 
-          </div>
-  
-          <div class="mb-card">
-
-            <div class="img-container">
-              <img src="../assets/img/artist-blog-01-480x325.jpg" alt="blog-image">
-            </div>
-  
-            <div class="description mt-4">
-              <h6><ColoredTextComp text="ARTIST" color="grey"/></h6>
-              <h4>Brush Strokes Energize Trees In Paintings</h4>
-            </div>
-  
-            <div class="blog-statistics d-flex mt-4">
-              <p><i class="fa-regular fa-calendar"></i>May 15, 2020</p>
-              <p><i class="fa-regular fa-eye"></i>603 views</p>
-            </div>
-
-          </div>
-  
-          <div class="mb-card">
-
-            <div class="img-container">
-              <img src="../assets/img/artist-blog-02-480x325.jpg" alt="blog-image">
-            </div>
-  
-            <div class="description mt-4">
-              <h6><ColoredTextComp text="ARTIST" color="grey"/></h6>
-              <h4>Brush Strokes Energize Trees In Paintings</h4>
-            </div>
-  
-            <div class="blog-statistics d-flex mt-4">
-              <p><i class="fa-regular fa-calendar"></i>May 15, 2020</p>
-              <p><i class="fa-regular fa-eye"></i>397 views</p>
-            </div>
-
-          </div>
+          <BlogCard 
+            image="artist-blog-02-480x325" 
+            :isImageJpeg="false"
+            artist="ARTIST" 
+            blogTitle="Connection Between Self-Portraits and Identity"
+            date="May 15, 2020" views="397"
+          />
 
         </div>
 
@@ -379,66 +320,37 @@
 
       <div class="mb-container">
 
-        <div class="section-title text-center">
-          <p>WANNA TRANSFORM YOUR LIFE?</p>
-          <h1>Glad to <ColoredTextComp text="Help You"/> Learn</h1>
+        <div class="text-center">
+          <SectionTitle title="WANNA TRANSFORM YOUR LIFE?" firstText="Glad to" coloredText="Help You" secondText="Learn" />
         </div>
 
         <div class="content">
 
           <div class="mb-cards-container d-flex">
 
-            <div class="mb-card">
+            <LearnCategoryCard 
+              icon="bi-flag" 
+              title="Idea Discussion" 
+              description="Get Teamed up with the specialists who work and teach coding for years at famous universities."
+            />
 
-              <div class="icon-container">
-                <i class="bi bi-flag"></i>
-              </div>
-  
-              <div class="description">
-                <h5>Idea Discussion</h5>
-                <p>Get Teamed up with the specialists who work and teach coding for years at famous universities.</p>
-              </div>
+            <LearnCategoryCard 
+              icon="bi-gear" 
+              title="Web Development" 
+              description="Learn to start building a webpage from scratch. You decide your own pace, course and speed."
+            />
 
-            </div>
-  
-            <div class="mb-card">
+            <LearnCategoryCard 
+              icon="bi-life-preserver" 
+              title="System Administration" 
+              description="Learners are encouraged to study the mechanism and structure of system administration."
+            />
 
-              <div class="icon-container">
-                <i class="bi bi-gear"></i>
-              </div>
-  
-              <div class="description">
-                <h5>Web Development</h5>
-                <p>Learn to start building a webpage from scratch. You decide your own pace, course and speed.</p>
-              </div>
-
-            </div>
-  
-            <div class="mb-card">
-
-              <div class="icon-container">
-                <i class="bi bi-life-preserver"></i>
-              </div>
-  
-              <div class="description">
-                <h5>System Administration</h5>
-                <p>Learners are encouraged to study the mechanism and structure of system administration.</p>
-              </div>
-
-            </div>
-  
-            <div class="mb-card">
-
-              <div class="icon-container">
-                <i class="bi bi-display"></i>
-              </div>
-  
-              <div class="description">
-                <h5>Graphic Design</h5>
-                <p>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.</p>
-              </div>
-
-            </div>
+            <LearnCategoryCard 
+              icon="bi-display" 
+              title="Graphic Design" 
+              description="Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness."
+            />
 
           </div>
   
@@ -479,11 +391,16 @@
   import A_Statistic from './A_Statistic.vue';
   import ServicesCard from './ServicesCard.vue';
   import SectionTitle from './SectionTitle.vue';
-import CheckboxOptions from './checkboxOptions.vue';
+  import CheckboxOptions from './CheckboxOptions.vue';
+  import CourseCard from './CourseCard.vue';
+  import QuoteAuthor from './QuoteAuthor.vue';
+  import BlogCard from './BlogCard.vue';
+  import LearnCategoryCard from './LearnCategoryCard.vue';
+
 
   export default {
     name: "MainComp",
-    components: { AccentBtnComp, ColoredTextComp, A_Statistic, ServicesCard, SectionTitle, CheckboxOptions }
+    components: { AccentBtnComp, ColoredTextComp, A_Statistic, ServicesCard, SectionTitle, CheckboxOptions, CourseCard, QuoteAuthor, BlogCard, LearnCategoryCard }
   }
 </script>
 
@@ -582,12 +499,16 @@ import CheckboxOptions from './checkboxOptions.vue';
       border-bottom-left-radius: 5px;
       padding-top: 7px;
       position: absolute;
+      z-index: 9999;
       top: 70px;
       right: 0;
       width: 40px;
       background-color: white;
       a{
         color: black;
+        &:hover{
+          color: $primary-color;
+        }
       }
       .icon{
         margin-bottom: 10px;
@@ -723,68 +644,6 @@ import CheckboxOptions from './checkboxOptions.vue';
     padding: 100px 0;
     background-color: $sections-color;
     .mb-container{
-      .mb-course-card{
-        width: calc(100% / 2 - 20px);
-        margin-top: 40px;
-        margin-right: 20px;
-        padding: 20px 0;
-        padding-left: 20px;
-        cursor: pointer;
-        &:hover{
-          background-color: white;
-        }
-        &:hover h6{
-          color: $primary-color;
-        }
-        .bg-image{
-          height:150px;
-          width: 150px;
-          border-radius: 50%;
-          margin-right: 20px;
-          background-size: cover;
-          background-position: center;
-        }
-        .bg-image-1{
-          background-image: url('../assets/img/course-02-480x298.jpg');
-        }
-        .bg-image-2{
-          background-image: url('../assets/img/stock-full-hd-03-480x298.jpg');
-        }
-        .bg-image-3{
-          background-image: url('../assets/img/stock-full-hd-04-480x298.jpg');
-        }
-        .bg-image-4{
-          background-image: url('../assets/img/stock-full-hd-06-480x298.jpg');
-        }
-        .bg-image-5{
-          background-image: url('../assets/img/course-featured-image-01-480x298.jpg');
-        }
-        .bg-image-6{
-          background-image: url('../assets/img/stock-full-hd-05-480x298.jpg');
-        }
-        h4{
-          font-weight: 700;
-        }
-        h6{
-          width: 290px;
-          line-height: 30px;
-          font-weight: 600;
-          color: #342f5d;
-        }
-        .course-decimal-price{
-          font-size: 18px;
-        }
-        .course-statistics{
-          p{
-            margin-right: 20px;
-            color: grey;
-            font-size: 14px;
-          }
-          i{
-            margin-right: 8px;
-          }
-        }
-      }
       .courses-btn{
         margin-top: 50px;
         .blackHoveredBtn:hover{
@@ -848,28 +707,15 @@ import CheckboxOptions from './checkboxOptions.vue';
         width: 570px;
         font-size: 26px;
         margin-bottom: 70px;
-        p{
-          font-weight: 400;
-        }
-        h6{
-          font-weight: bold;
-          margin-bottom: 0;
-        }
-        span{
-          color: grey;
-          font-size: 14px;
-        } 
       }
     }
     .society-partners{
       padding: 0 40px;
-      ul{
-        li{
-          margin-right: 70px;
-          a{
-            img{
-              object-fit: cover;
-            }
+      li{
+        margin-right: 70px;
+        a{
+          img{
+            object-fit: cover;
           }
         }
       }
@@ -879,26 +725,6 @@ import CheckboxOptions from './checkboxOptions.vue';
   .blogs{
     padding: 70px 0;
     background-color: $sections-color;
-    .mb-card{
-      width: calc(100% / 3 - 20px);
-      margin-right: 20px;
-      .img-container{
-        img{
-          width: 100%;
-          border-radius: 5px;
-        }
-      }
-      .blog-statistics{
-        p{
-          margin-right: 20px;
-          color: grey;
-          font-size: 14px;
-        }
-        i{
-          margin-right: 8px;
-        }
-      }
-    }
   }
 
   .learn-categories{
@@ -936,18 +762,6 @@ import CheckboxOptions from './checkboxOptions.vue';
     }
     .content{
       margin-top: 70px;
-      .mb-card{
-        width: calc(100% / 4 - 20px);
-        margin-right: 20px;
-      }
-      .icon-container{
-        font-size: 60px;
-      }
-      .description{
-        p{
-          font-size: 14px;
-        }
-      }
       .bottom-image{
         margin-top: 110px;
         img{

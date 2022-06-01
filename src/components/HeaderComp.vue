@@ -24,7 +24,7 @@
       </div>
 
       <div class="search position-relative">
-        <input type="text" placeholder="Search...">
+        <input type="text" v-model="search" placeholder="Search...">
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
 
@@ -39,6 +39,11 @@
     name: 'HeaderComp',
     props:{
       headerMenu: Array
+    },
+    data(){
+      return{
+        search: ''
+      }
     }
   }
 </script>
