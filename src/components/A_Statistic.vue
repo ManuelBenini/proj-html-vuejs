@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'A_StatisticsList',
+  name: 'A_Statistic',
   props:{
     title: String,
     text: String
@@ -18,7 +18,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
   @import '../assets/style/variables';
 
   h3{

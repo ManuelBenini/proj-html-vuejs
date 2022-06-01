@@ -73,13 +73,13 @@
   
           <div class="statistics d-flex justify-content-between">
 
-            <A_StatisticsList title="1.926"  text="FINISHED SESSIONS" />
-            <A_StatisticsList title="3.092+"  text="ENROLLED LEARNERS" />
-            <A_StatisticsList title="200"  text="ONLINE ISTRUCTORS" />
-            <A_StatisticsList title="100%"  text="SATISFACTION RATE" />
+            <A_Statistic title="1.926"  text="FINISHED SESSIONS" />
+            <A_Statistic title="3.092+"  text="ENROLLED LEARNERS" />
+            <A_Statistic title="200"  text="ONLINE ISTRUCTORS" />
+            <A_Statistic title="100%"  text="SATISFACTION RATE" />
 
           </div>
-          
+
         </div>
 
       </div>
@@ -92,51 +92,58 @@
         <div class="mb-columns d-flex">
 
           <div class="mb-column mb-column-1">
-            <div class="mb-service-card">
-              <div class="card-description">
-               <h5>Graphic Design</h5>
-               <p>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.</p>
-              </div>
-              <div class="card-image card-image-1"></div>
-           </div>
-  
-            <div class="mb-service-card">
-              <div class="card-image card-image-3"></div>
-              <div class="card-description">
-               <h5>Idea Discussion</h5>
-               <p>Get teamed up with the specialists who work and teach coding for years at famous universities</p>
-              </div>
-            </div>
+
+            <ServicesCard 
+              title="Graphic Design"
+              text="Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness." 
+              imageNumber="1"
+              :inverse="false"
+            />
+
+            <ServicesCard 
+              title="Idea Discussion"
+              text="Get teamed up with the specialists who work and teach coding for years at famous universities" 
+              imageNumber="3"
+              :inverse="true"
+            />
+
          </div>
   
          <div class="mb-column mb-column-2">
-            <div class="mb-service-card">
-              <div class="card-description">
-               <h5>Business Administration</h5>
-               <p>Leaners are encouraged to study the mechanism and structure of system administation.</p>
-              </div>
-              <div class="card-image card-image-2"></div>
-           </div>
-  
-            <div class="mb-service-card">
-              <div class="card-image card-image-4 m-2"></div>
-              <div class="card-description">
-               <h5>Web Development</h5>
-               <p>Learn to start building a webpage from scatch. you decide your own pace, course and speed.</p>
-              </div>
-            </div>
+
+            <ServicesCard 
+              title="Business Administration"
+              text="Leaners are encouraged to study the mechanism and structure of system administation." 
+              imageNumber="2"
+              :inverse="false" 
+            />
+
+            <ServicesCard 
+              title="Web Development"
+              text="Learn to start building a webpage from scatch. you decide your own pace, course and speed." 
+              imageNumber="4"
+              :inverse="true"
+            />
+
          </div>
 
         </div>
 
         <div class="services-to-create">
 
-          <p>TOGETHER WE CAN CREATE</p>
-          <h1>Services We <ColoredTextComp text="Can Provide" /> For My Clients.</h1>
-          <p><i class="fa-solid fa-check"></i> Select & customize courses to your preferences</p>
-          <p><i class="fa-solid fa-check"></i> Change the tutor and make arrangements</p>
-          <p><i class="fa-solid fa-check"></i> Partecipate in events to join others</p>
-          <p><i class="fa-solid fa-check"></i> Get the desired certificate delivered at house</p>
+          <SectionTitle 
+            title="TOGETHER WE CAN CREATE" 
+            firstText="Services We" 
+            coloredText="Can Provide" 
+            secondText="For My Clients." 
+          />
+
+          <div class="options mt-5">
+            <CheckboxOptions text="Select & customize courses to your preferences" />
+            <CheckboxOptions text="Change the tutor and make arrangements" />
+            <CheckboxOptions text="Partecipate in events to join others" />
+            <CheckboxOptions text="Get the desired certificate delivered at house" />
+          </div>
 
           <AccentBtnComp class="mt-3 blackHoveredBtn" btnText="Get started for free" />
 
@@ -297,7 +304,7 @@
       <div class="mb-container">
 
         <div class="section-title text-center">
-          <p><ColoredTextComp text="ENJOY READING ON MAXCOACH" color="grey"/></p>
+          <p>ENJOY READING ON MAXCOACH</p>
           <h1>Latest on <ColoredTextComp text="Our Blogs"/></h1>
         </div>
 
@@ -373,7 +380,7 @@
       <div class="mb-container">
 
         <div class="section-title text-center">
-          <p><ColoredTextComp text="WANNA TRANSFORM YOUR LIFE?" color="grey"/></p>
+          <p>WANNA TRANSFORM YOUR LIFE?</p>
           <h1>Glad to <ColoredTextComp text="Help You"/> Learn</h1>
         </div>
 
@@ -469,11 +476,14 @@
 <script>
   import AccentBtnComp from './AccentBtnComp.vue';
   import ColoredTextComp from './ColoredTextComp.vue';
-import A_StatisticsList from './A_StatisticsList.vue';
+  import A_Statistic from './A_Statistic.vue';
+  import ServicesCard from './ServicesCard.vue';
+  import SectionTitle from './SectionTitle.vue';
+import CheckboxOptions from './checkboxOptions.vue';
 
   export default {
     name: "MainComp",
-    components: { AccentBtnComp, ColoredTextComp, A_StatisticsList }
+    components: { AccentBtnComp, ColoredTextComp, A_Statistic, ServicesCard, SectionTitle, CheckboxOptions }
   }
 </script>
 
@@ -693,44 +703,6 @@ import A_StatisticsList from './A_StatisticsList.vue';
     .mb-column{
       width: 250px;
       margin-right: 15px;
-      .mb-service-card{
-        padding-top: 20px;
-        background-color: white;
-        margin-bottom: 25px;
-        box-shadow: 1px 1px 15px rgba($color: #000000, $alpha: 0.1);
-        .card-description{
-          padding: 25px 7px 5px 14px;
-          p{
-            font-size: 15px;
-            font-weight: 400;
-          }
-          h5{
-            color: #1f2154;
-          }
-        }
-        .card-image{
-          height: 160px;
-          background-repeat: no-repeat;
-          background-size: contain;
-        }
-        .card-image-1{
-          margin-left: 5px;
-          background-image: url('../assets/img/home-6-service-image-01.png');
-          background-position: left;
-        }
-        .card-image-2{
-          background-image: url('../assets/img/home-6-service-image-02.png');
-          background-position: center;
-        }
-        .card-image-3{
-          background-image: url('../assets/img/home-6-service-image-03.png');
-          background-position: left;
-        }
-        .card-image-4{
-          background-image: url('../assets/img/home-6-service-image-04.png');
-          background-position: center;
-        }
-      }
     }
     .mb-column-2{
       margin-top: 50px;
@@ -740,16 +712,6 @@ import A_StatisticsList from './A_StatisticsList.vue';
       padding-top: 175px;
       margin-left: 52px;
       width: 380px;
-      h1{
-        margin-bottom: 40px;
-      }
-      p{
-        font-weight: 400;
-      }
-      .fa-check{
-        margin-right: 10px;
-        color: $primary-color;
-      }
       .blackHoveredBtn:hover{
         background-color: #3f3a64;
         color: white;
@@ -972,14 +934,8 @@ import A_StatisticsList from './A_StatisticsList.vue';
         border: none;
       }
     }
-    .section-title{
-      margin-bottom: 70px;
-    }
     .content{
-      height: 84%;
-      justify-content: space-between;
-    }
-    .mb-cards-container{
+      margin-top: 70px;
       .mb-card{
         width: calc(100% / 4 - 20px);
         margin-right: 20px;
@@ -992,14 +948,14 @@ import A_StatisticsList from './A_StatisticsList.vue';
           font-size: 14px;
         }
       }
-    }
-    .bottom-image{
-      margin-top: 110px;
-      img{
-        width: 100%;
-        height: 100%;
-        transform: translate(0, 28px)
-      };
+      .bottom-image{
+        margin-top: 110px;
+        img{
+          width: 100%;
+          height: 100%;
+          transform: translate(0, 28px)
+        };
+      }
     }
   }
 
